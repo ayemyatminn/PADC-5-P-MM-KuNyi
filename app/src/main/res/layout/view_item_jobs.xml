@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="4dp"
+    android:layout_marginBottom="@dimen/margin_medium"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginBottom="@dimen/margin_medium">
+
+        <TextView
+            android:id="@+id/tvPostedUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="thura.72@gmail.com"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_regular_2x"/>
+
+        <ImageView
+            android:id="@+id/ivInterest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_star"
+            android:layout_alignParentEnd="true"
+            android:padding="@dimen/margin_medium"/>
+
+        <TextView
+            android:id="@+id/tvPostedDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPostedUserName"
+            android:text="Posted Date : "
+            android:textColor="@color/primary_text"
+            />
+
+        <TextView
+            android:id="@+id/tvPostDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPostedUserName"
+            android:layout_toRightOf="@id/tvPostedDate"
+            android:text=" 2017-01-10"
+            android:textColor="@color/primary_text"/>
+
+        <View
+            android:id="@+id/linebrake"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:background="#c5c5c5"
+            android:layout_below="@id/tvPostedDate"/>
+
+        <TextView
+            android:id="@+id/tvPostShortDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linebrake"
+            android:text="To teaching kids in Mathematics"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_regular_2x"
+            android:layout_marginLeft="@dimen/margin_small" />
+
+        <TextView
+            android:id="@+id/tvPostEndDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPostShortDesc"
+            android:layout_marginLeft="@dimen/margin_medium_3"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:drawableLeft="@drawable/ic_date_range"
+            android:text="2017-02-10"
+            android:textColor="@color/primary_text"
+            android:drawablePadding="@dimen/margin_medium"/>
+
+        <TextView
+            android:id="@+id/tvPostPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPostEndDate"
+            android:layout_alignLeft="@id/tvPostEndDate"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:drawableLeft="@drawable/ic_phone"
+            android:drawablePadding="@dimen/margin_medium"
+            android:text="0911111111"
+            android:textColor="@color/primary_text"
+            />
+
+        <TextView
+            android:id="@+id/tvPostOfferAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPostPhone"
+            android:layout_alignLeft="@id/tvPostEndDate"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:drawableLeft="@drawable/ic_attach_money"
+            android:drawablePadding="@dimen/margin_medium"
+            android:text="300000"
+            android:textColor="@color/primary_text"/>
+
+        <Button
+            android:id="@+id/brnApply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPostOfferAmount"
+            android:text="Apply This job"
+            android:textAllCaps="false"
+            android:background="#e0d072"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
